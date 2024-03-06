@@ -22,4 +22,4 @@ The repository is organized as follows:<br>
 ├── process_management/ # Process management codes<br>
 ├── file_system_shell/ # File system shell implementations<br>
 ├── ipc_programs/ # IPC programs (piping, shared memory, producer-consumer)<br>
-├── threading/ # Threading and multithreading examples<br>
+├── threading/ # Threading and multithreading  using merge-sort examples<br>
