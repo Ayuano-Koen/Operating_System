@@ -1,0 +1,9 @@
+
+Write a C/C++ program to implement producer-consumer problem with Peterson’s algorithm.
+In your program, you create two functions (i) void producer(queue *) for producing a number of items, and (ii)
+void consumer(queue *) to consume the items created by the producer.
+
+ You cam create a shared memory using shmget(), shmat(), shmdt(), and shmctl() system calls. Then implement a circular queue (bounded
+buffer) in the shared memory, where the producer stores the produced item and consumer communes the
+items from the queue. In order to synchronize the produce and consumer operations, you must use the
+Peterson’s algorithm.

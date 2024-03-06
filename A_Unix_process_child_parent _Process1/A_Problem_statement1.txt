@@ -1,0 +1,20 @@
+Write a C++ program “process.c++”, which takes n integers as input and then does the followings.
+
+ (a)    Create a child process by executing the system call fork(), print the identities of the parent process
+        (“process.c”) and child process (just created) with the system calls getpid(), getppid(). The child
+        process is printing the minimum of n integers (task 1) and the parent process printing the maximum
+        of n integers (task 2). Your program must ensure that the task 1 will be completed before the
+        completion of task 2 (use sleep() system call for this purpose).
+
+
+(b)  You can modify your program “process.c” to make the child process as an orphan process (an
+    orphan process is a computer process whose parent process has finished, though it remains running
+    itself) using the sleep() system call. Print the identity of the parent process of the orphan child
+    process.
+
+
+ (c)    You can modify your program “process.c” to make the child process as an zombie process (A
+        process that terminates cannot leave the system until its parent accepts its return code. The parent
+        is not accepting the return status of the terminating child process, because it is in sleep mode) using
+        the sleep(), and exit() system calls. Use the command “ps” to know the process status. Use the
+        kill command to “kill” the parent process and thus, the child process can terminate.

@@ -1,0 +1,16 @@
+Write a C/C++ program “process.c” to do the followings:
+
+1.  A parent process P will create a child process Q. The parent process create a shared memory of size
+    1024 bytes.
+
+2. P and Q will attached them with the shared memory.
+
+3. P writes a matrix A = [aij ]n×n to the shared memory and Q reads it.
+
+4. Q writes a matrix B = [bij ]n×n to the shared memory and P reads it.
+
+5. P will compute C = A × B and Q will computes D = B × A.
+
+6. P and Q will detach them with the shared memory.
+
+7. P will destroy the shared memory.

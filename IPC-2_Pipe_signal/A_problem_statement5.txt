@@ -1,0 +1,24 @@
+Write a C++ program to implement the following game.
+
+    The parent process P first creates two pipes and then spawns two child processes C and D. One of the
+    two pipes is meant for communication between P and C, and the other is for communication between P
+    and D. 
+    
+    Now a loop runs as follows. In each iteration (round), P first randomly chooses one of the flags
+    MIN or MAX. 
+    
+    The choices randomly vary from one iteration to another. Each of the two child processes
+    C and D generates a random positive integer (between 0 to 99) and sends that to P via its pipe. P reads
+    the two integers. 
+    
+    Let these be c and d, respectively. If P has chosen MIN, then the child process which
+    sends the smaller of c and d gets one point, and if P has chosen MAX, then the child process which sends
+    the larger of c and d gets one point. 
+    
+    If c = d, then this round is ignored. The child process, which first obtains 10 points, wins the game. 
+    
+    When the game ends, P sends a user-defined signal to both C and D, and the child processes exit after handling the signal (to know who was the winner). 
+    After C and D exit, the parent process P also exists. During each iteration of the game, P should also print appropriate messages like P’s choice of 
+    the flag (MIN or MAX), the integers (c and d) received from C and D, which child gets the point, the current scores of C and D to let the user 
+    know how the game is going on.
+

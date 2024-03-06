@@ -1,0 +1,21 @@
+Q1. Write a C++ program “process.cpp” to simulate a command interpreter (shell). The shell will give a
+prompt for the user to type in a command from the set of commands. Take the command, execute it and
+give the prompt back to the user for the next command. Your program should be able to do the following:
+
+1. give a prompt “Yourname>” for the user to type in a command, and
+2. implement the following built in commands:
+
+        who Name of the user login to the system
+        cd dir_nane Changes the directory to “dir_nane”
+        pwd Prints the current directory
+        mkdir dir_nane Creates the directory “dir_nane”
+        rmdir dir_nane Removes the directory d“dir_nane”
+        ls Lists the files and directories in the present directory
+        exit Exits out of the shell
+
+Any other command typed at the prompt should be executed as if it is the name of the executable file. For
+example - typing “a.out” should execute the file a.out. This file can be in the current directory or any
+of the other directories specified by PATH environment variable. The executable file should be executed
+after creating a new process and executing the file onto it. The parent process should wait for the file to
+finish execution and then go on to read the next command from the user. The executable can take any
+number of command line parameters.

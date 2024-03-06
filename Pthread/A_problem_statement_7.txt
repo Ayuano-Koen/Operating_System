@@ -1,0 +1,6 @@
+Write a C++ program to create two matrices, A and B, of sizes n × n. 
+Create two threads running parallels where one thread will compute C = A + B, and the other will compute D = A − B. 
+The main thread which will wait for the two parallel threads to complete their task and it will compute E = C×D and
+prints E. In your program, you must include “pthread.h” header file to implement the pthread_create(),
+pthread_join(), pthread_exit(), pthread_attr_init(), pthread_attr_setdetachstate(),
+pthread_attr_destroy() system calls.
